@@ -5,6 +5,7 @@ const button = (props) => (
     <button
         className={["Button", props.btnType].join(' ')}
         onClick={props.clicked}
+        type="button"
     >{props.children}</button>
 );
 
