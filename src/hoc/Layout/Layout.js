@@ -21,7 +21,6 @@ class Layout extends Component {
     }
 
     render() {
-        console.log(this.state.showSideDrawer)
         return (
             <Aux>
                 <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
