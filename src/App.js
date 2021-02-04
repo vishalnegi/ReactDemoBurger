@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    console.clear()
+    // console.clear()
 
     let routes = (
       <Switch>
@@ -34,7 +34,7 @@ class App extends Component {
           <Route path="/checkout" component={Checkout} />
           <Route path="/orders" component={Orders} />
           <Route path="/logout" component={Logout} />
-          <Route path="/" component={BurgerBuilder} />
+          <Route path="/" exact component={BurgerBuilder} />
           <Redirect to="/" />
         </Switch>
       )
